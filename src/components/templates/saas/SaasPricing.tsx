@@ -56,7 +56,7 @@ export default function SaasPricing() {
     <section id="pricing" className="py-24 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
       <ScrollReveal>
         <div className="text-center mb-16">
-          <p className="text-saas-accent text-sm font-medium uppercase tracking-wider mb-3">
+          <p className="text-saas-accent text-base font-medium uppercase tracking-wider mb-3">
             Pricing
           </p>
           <h2 className="font-space-grotesk text-3xl sm:text-4xl font-bold text-white mb-4">
@@ -79,7 +79,7 @@ export default function SaasPricing() {
               }`}
             >
               {plan.popular && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-saas-accent rounded-full text-xs font-medium text-white">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-saas-accent rounded-full text-sm font-medium text-white">
                   Most Popular
                 </div>
               )}
@@ -88,14 +88,14 @@ export default function SaasPricing() {
                 <h3 className="font-space-grotesk text-lg font-semibold text-white mb-1">
                   {plan.name}
                 </h3>
-                <p className="text-sm text-zinc-500">{plan.description}</p>
+                <p className="text-base text-zinc-500">{plan.description}</p>
               </div>
 
               <div className="mb-6">
                 <span className="font-space-grotesk text-4xl font-bold text-white">
                   {plan.price}
                 </span>
-                <span className="text-zinc-500 text-sm ml-1">
+                <span className="text-zinc-500 text-base ml-1">
                   {plan.period}
                 </span>
               </div>
@@ -104,7 +104,7 @@ export default function SaasPricing() {
                 {plan.features.map((feature) => (
                   <li
                     key={feature}
-                    className="flex items-center gap-3 text-sm text-zinc-300"
+                    className="flex items-center gap-3 text-base text-zinc-300"
                   >
                     <Check className="w-4 h-4 text-saas-accent flex-shrink-0" />
                     {feature}
@@ -113,7 +113,7 @@ export default function SaasPricing() {
               </ul>
 
               <button
-                className={`w-full py-3 rounded-lg text-sm font-medium transition-colors ${
+                className={`w-full py-3 rounded-lg text-base font-medium transition-colors ${
                   plan.popular
                     ? "bg-saas-accent text-white hover:bg-saas-accent-light"
                     : "bg-saas-bg text-zinc-300 border border-saas-border hover:border-zinc-600"

@@ -1,4 +1,12 @@
-import { Github, Twitter, Linkedin, Youtube } from "lucide-react";
+import { Github, Linkedin, Youtube } from "lucide-react";
+
+function XIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
+      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+    </svg>
+  );
+}
 
 const links = {
   Product: ["Features", "Pricing", "Changelog", "Docs", "API"],
@@ -9,7 +17,7 @@ const links = {
 
 const socials = [
   { icon: Github, label: "GitHub", href: "#" },
-  { icon: Twitter, label: "Twitter", href: "#" },
+  { icon: XIcon, label: "X", href: "#" },
   { icon: Linkedin, label: "LinkedIn", href: "#" },
   { icon: Youtube, label: "YouTube", href: "#" },
 ];
@@ -21,7 +29,7 @@ export default function SaasFooter() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
           {Object.entries(links).map(([category, items]) => (
             <div key={category}>
-              <h4 className="text-white text-sm font-semibold mb-4">
+              <h4 className="text-white text-base font-semibold mb-4">
                 {category}
               </h4>
               <ul className="space-y-2.5">
@@ -29,7 +37,7 @@ export default function SaasFooter() {
                   <li key={item}>
                     <a
                       href="#"
-                      className="text-sm text-zinc-500 hover:text-zinc-300 transition-colors"
+                      className="text-base text-zinc-500 hover:text-zinc-300 transition-colors"
                     >
                       {item}
                     </a>
@@ -41,7 +49,7 @@ export default function SaasFooter() {
         </div>
 
         <div className="flex flex-col sm:flex-row items-center justify-between pt-8 border-t border-saas-border gap-4">
-          <p className="text-sm text-zinc-600">
+          <p className="text-base text-zinc-600">
             &copy; {new Date().getFullYear()} FlowBoard. All rights reserved.
           </p>
           <div className="flex items-center gap-1">

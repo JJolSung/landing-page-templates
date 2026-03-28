@@ -19,7 +19,7 @@ export default function SaasHero() {
 
       <div className="relative z-10 max-w-4xl mx-auto text-center">
         <ScrollReveal>
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-saas-border text-sm text-zinc-400 mb-8">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-saas-border text-base text-zinc-400 mb-8">
             <span className="w-2 h-2 bg-saas-accent rounded-full animate-pulse" />
             Now in public beta
           </div>
@@ -44,14 +44,14 @@ export default function SaasHero() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="#pricing"
-              className="px-8 py-3.5 bg-saas-accent text-white rounded-lg font-medium text-sm hover:bg-saas-accent-light transition-colors flex items-center gap-2"
+              className="px-8 py-3.5 bg-saas-accent text-white rounded-lg font-medium text-base hover:bg-saas-accent-light transition-colors flex items-center gap-2"
             >
               Start Free Trial
               <ArrowRight className="w-4 h-4" />
             </a>
             <a
               href="#product"
-              className="px-8 py-3.5 bg-saas-surface text-zinc-300 rounded-lg font-medium text-sm border border-saas-border hover:border-zinc-600 transition-colors flex items-center gap-2"
+              className="px-8 py-3.5 bg-saas-surface text-zinc-300 rounded-lg font-medium text-base border border-saas-border hover:border-zinc-600 transition-colors flex items-center gap-2"
             >
               <Play className="w-4 h-4" />
               Watch Demo
@@ -71,15 +71,15 @@ export default function SaasHero() {
                 <div className="w-3 h-3 rounded-full bg-yellow-500/60" />
                 <div className="w-3 h-3 rounded-full bg-green-500/60" />
               </div>
-              <div className="h-5 w-48 bg-saas-surface rounded flex items-center justify-center">
-                <span className="text-[9px] text-zinc-600">app.flowboard.io/dashboard</span>
+              <div className="h-5 lg:h-7 w-48 bg-saas-surface rounded flex items-center justify-center">
+                <span className="text-[9px] lg:text-sm text-zinc-600">app.flowboard.io/dashboard</span>
               </div>
               <div className="w-16" />
             </div>
             {/* Content */}
             <div className="grid grid-cols-12 gap-3">
               {/* Sidebar */}
-              <div className="col-span-3 space-y-1.5">
+              <div className="col-span-3 space-y-1.5 lg:space-y-2">
                 {[
                   { label: "Overview", active: false },
                   { label: "Projects", active: true },
@@ -90,11 +90,11 @@ export default function SaasHero() {
                 ].map((item) => (
                   <div
                     key={item.label}
-                    className={`h-6 rounded px-2 flex items-center ${
+                    className={`h-6 lg:h-8 rounded px-2 flex items-center ${
                       item.active ? "bg-saas-accent/20" : "bg-saas-surface"
                     }`}
                   >
-                    <span className={`text-[9px] ${item.active ? "text-saas-accent" : "text-zinc-600"}`}>
+                    <span className={`text-sm lg:text-base ${item.active ? "text-saas-accent" : "text-zinc-600"}`}>
                       {item.label}
                     </span>
                   </div>
@@ -110,20 +110,20 @@ export default function SaasHero() {
                   ].map((stat) => (
                     <div
                       key={stat.label}
-                      className="h-20 bg-saas-surface rounded-lg p-3"
+                      className="h-20 lg:h-28 bg-saas-surface rounded-lg p-3 lg:p-4"
                     >
-                      <p className="text-[9px] text-zinc-600 mb-1.5">{stat.label}</p>
-                      <p className="text-sm font-semibold text-white font-mono">{stat.value}</p>
-                      <p className="text-[9px] text-emerald-400 mt-0.5">{stat.trend}</p>
+                      <p className="text-[9px] lg:text-sm text-zinc-600 mb-1.5">{stat.label}</p>
+                      <p className="text-sm lg:text-xl font-semibold text-white font-mono">{stat.value}</p>
+                      <p className="text-[9px] lg:text-sm text-emerald-400 mt-0.5">{stat.trend}</p>
                     </div>
                   ))}
                 </div>
-                <div className="h-32 bg-saas-surface rounded-lg p-3">
+                <div className="h-32 lg:h-44 bg-saas-surface rounded-lg p-3 lg:p-4">
                   <div className="flex items-center justify-between mb-3">
-                    <span className="text-[9px] text-zinc-600">Monthly Revenue</span>
-                    <span className="text-[8px] text-zinc-700 bg-saas-bg px-1.5 py-0.5 rounded">Last 12 months</span>
+                    <span className="text-[9px] lg:text-sm text-zinc-600">Monthly Revenue</span>
+                    <span className="text-[8px] lg:text-sm text-zinc-700 bg-saas-bg px-1.5 py-0.5 rounded">Last 12 months</span>
                   </div>
-                  <div className="flex gap-1.5 h-20">
+                  <div className="flex gap-1.5 h-20 lg:h-28">
                     {[40, 60, 35, 80, 55, 70, 45, 65, 50, 75, 60, 85].map(
                       (h, i) => (
                         <div key={i} className="flex-1 flex items-end">

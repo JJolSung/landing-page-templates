@@ -37,12 +37,12 @@ export default function SaasCTA() {
                   name="email"
                   placeholder="Enter your email"
                   onChange={() => clearError("email")}
-                  className={`w-full px-4 py-3 bg-saas-bg border rounded-lg text-white text-sm placeholder-zinc-500 focus:outline-none focus:border-saas-accent transition-colors ${
+                  className={`w-full px-4 py-3 bg-saas-bg border rounded-lg text-white text-base placeholder-zinc-500 focus:outline-none focus:border-saas-accent transition-colors ${
                     errors.email ? "border-red-500" : "border-saas-border"
                   }`}
                 />
                 {errors.email && (
-                  <p className="text-red-400 text-xs mt-1 text-left">
+                  <p className="text-red-400 text-sm mt-1 text-left">
                     {errors.email}
                   </p>
                 )}
@@ -50,7 +50,7 @@ export default function SaasCTA() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="px-6 py-3 bg-saas-accent text-white rounded-lg text-sm font-medium hover:bg-saas-accent-light transition-colors flex items-center justify-center gap-2 disabled:opacity-60"
+                className="px-6 py-3 bg-saas-accent text-white rounded-lg text-base font-medium hover:bg-saas-accent-light transition-colors flex items-center justify-center gap-2 disabled:opacity-60"
               >
                 {isSubmitting ? (
                   <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />

@@ -35,7 +35,7 @@ export default function SaasFAQ() {
     <section id="faq" className="py-24 px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto">
       <ScrollReveal>
         <div className="text-center mb-16">
-          <p className="text-saas-accent text-sm font-medium uppercase tracking-wider mb-3">
+          <p className="text-saas-accent text-base font-medium uppercase tracking-wider mb-3">
             FAQ
           </p>
           <h2 className="font-space-grotesk text-3xl sm:text-4xl font-bold text-white">
@@ -53,7 +53,7 @@ export default function SaasFAQ() {
                 aria-expanded={openIndex === i}
                 className="w-full flex items-center justify-between p-5 text-left hover:bg-saas-surface/50 transition-colors"
               >
-                <span className="text-white text-sm font-medium pr-4">
+                <span className="text-white text-base font-medium pr-4">
                   {faq.q}
                 </span>
                 <motion.div
@@ -71,7 +71,7 @@ export default function SaasFAQ() {
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.2 }}
                   >
-                    <p className="px-5 pb-5 text-sm text-zinc-400 leading-relaxed">
+                    <p className="px-5 pb-5 text-base text-zinc-400 leading-relaxed">
                       {faq.a}
                     </p>
                   </motion.div>
