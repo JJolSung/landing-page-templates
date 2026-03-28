@@ -21,7 +21,7 @@ export default function RestaurantPage() {
   if (!template) return null;
 
   return (
-    <main className="min-h-screen bg-restaurant-bg text-restaurant-green font-lato">
+    <main className="min-h-screen overflow-x-hidden bg-restaurant-bg text-restaurant-green font-lato">
       <BackToGallery
         templateName="Restaurant & Caf\u00e9"
         onToggleInfo={() => setIsInfoOpen(!isInfoOpen)}

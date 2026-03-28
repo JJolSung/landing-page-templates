@@ -20,7 +20,7 @@ export default function CoursePage() {
   if (!template) return null;
 
   return (
-    <main className="min-h-screen bg-course-bg text-course-text font-nunito">
+    <main className="min-h-screen overflow-x-hidden bg-course-bg text-course-text font-nunito">
       <BackToGallery
         templateName="Online Course"
         onToggleInfo={() => setIsInfoOpen(!isInfoOpen)}
