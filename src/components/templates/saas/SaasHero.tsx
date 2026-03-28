@@ -19,7 +19,7 @@ export default function SaasHero() {
 
       <div className="relative z-10 max-w-4xl mx-auto text-center">
         <ScrollReveal>
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-saas-border text-sm text-zinc-400 mb-8">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-saas-border text-base text-zinc-400 mb-8">
             <span className="w-2 h-2 bg-saas-accent rounded-full animate-pulse" />
             Now in public beta
           </div>
@@ -44,14 +44,14 @@ export default function SaasHero() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="#pricing"
-              className="px-8 py-3.5 bg-saas-accent text-white rounded-lg font-medium text-sm hover:bg-saas-accent-light transition-colors flex items-center gap-2"
+              className="px-8 py-3.5 bg-saas-accent text-white rounded-lg font-medium text-base hover:bg-saas-accent-light transition-colors flex items-center gap-2"
             >
               Start Free Trial
               <ArrowRight className="w-4 h-4" />
             </a>
             <a
               href="#product"
-              className="px-8 py-3.5 bg-saas-surface text-zinc-300 rounded-lg font-medium text-sm border border-saas-border hover:border-zinc-600 transition-colors flex items-center gap-2"
+              className="px-8 py-3.5 bg-saas-surface text-zinc-300 rounded-lg font-medium text-base border border-saas-border hover:border-zinc-600 transition-colors flex items-center gap-2"
             >
               <Play className="w-4 h-4" />
               Watch Demo
@@ -72,7 +72,7 @@ export default function SaasHero() {
                 <div className="w-3 h-3 rounded-full bg-green-500/60" />
               </div>
               <div className="h-5 w-48 bg-saas-surface rounded flex items-center justify-center">
-                <span className="text-[9px] text-zinc-600">app.flowboard.io/dashboard</span>
+                <span className="text-sm text-zinc-600">app.flowboard.io/dashboard</span>
               </div>
               <div className="w-16" />
             </div>
@@ -94,7 +94,7 @@ export default function SaasHero() {
                       item.active ? "bg-saas-accent/20" : "bg-saas-surface"
                     }`}
                   >
-                    <span className={`text-[9px] ${item.active ? "text-saas-accent" : "text-zinc-600"}`}>
+                    <span className={`text-sm ${item.active ? "text-saas-accent" : "text-zinc-600"}`}>
                       {item.label}
                     </span>
                   </div>
@@ -112,16 +112,16 @@ export default function SaasHero() {
                       key={stat.label}
                       className="h-20 bg-saas-surface rounded-lg p-3"
                     >
-                      <p className="text-[9px] text-zinc-600 mb-1.5">{stat.label}</p>
-                      <p className="text-sm font-semibold text-white font-mono">{stat.value}</p>
-                      <p className="text-[9px] text-emerald-400 mt-0.5">{stat.trend}</p>
+                      <p className="text-sm text-zinc-600 mb-1.5">{stat.label}</p>
+                      <p className="text-base font-semibold text-white font-mono">{stat.value}</p>
+                      <p className="text-sm text-emerald-400 mt-0.5">{stat.trend}</p>
                     </div>
                   ))}
                 </div>
                 <div className="h-32 bg-saas-surface rounded-lg p-3">
                   <div className="flex items-center justify-between mb-3">
-                    <span className="text-[9px] text-zinc-600">Monthly Revenue</span>
-                    <span className="text-[8px] text-zinc-700 bg-saas-bg px-1.5 py-0.5 rounded">Last 12 months</span>
+                    <span className="text-sm text-zinc-600">Monthly Revenue</span>
+                    <span className="text-sm text-zinc-700 bg-saas-bg px-1.5 py-0.5 rounded">Last 12 months</span>
                   </div>
                   <div className="flex gap-1.5 h-20">
                     {[40, 60, 35, 80, 55, 70, 45, 65, 50, 75, 60, 85].map(

@@ -35,7 +35,7 @@ function AvatarFallback({ name }: { name: string }) {
     .join("");
 
   return (
-    <div className="w-11 h-11 rounded-full bg-gradient-to-br from-saas-accent to-saas-accent-light flex items-center justify-center text-white text-sm font-semibold ring-2 ring-saas-accent/20">
+    <div className="w-11 h-11 rounded-full bg-gradient-to-br from-saas-accent to-saas-accent-light flex items-center justify-center text-white text-base font-semibold ring-2 ring-saas-accent/20">
       {initials}
     </div>
   );
@@ -46,7 +46,7 @@ export default function SaasTestimonials() {
     <section className="py-24 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
       <ScrollReveal>
         <div className="text-center mb-16">
-          <p className="text-saas-accent text-sm font-medium uppercase tracking-wider mb-3">
+          <p className="text-saas-accent text-base font-medium uppercase tracking-wider mb-3">
             Testimonials
           </p>
           <h2 className="font-space-grotesk text-3xl sm:text-4xl font-bold text-white">
@@ -67,7 +67,7 @@ export default function SaasTestimonials() {
                   />
                 ))}
               </div>
-              <p className="text-zinc-300 text-sm leading-relaxed mb-6 flex-1">
+              <p className="text-zinc-300 text-base leading-relaxed mb-6 flex-1">
                 &ldquo;{t.quote}&rdquo;
               </p>
               <div className="flex items-center gap-3">
@@ -87,8 +87,8 @@ export default function SaasTestimonials() {
                   <AvatarFallback name={t.name} />
                 </div>
                 <div>
-                  <p className="text-white text-sm font-medium">{t.name}</p>
-                  <p className="text-zinc-500 text-xs">{t.title}</p>
+                  <p className="text-white text-base font-medium">{t.name}</p>
+                  <p className="text-zinc-500 text-sm">{t.title}</p>
                 </div>
               </div>
             </div>

@@ -52,7 +52,7 @@ export default function SaasFeatures() {
     <section id="features" className="py-24 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
       <ScrollReveal>
         <div className="text-center mb-16">
-          <p className="text-saas-accent text-sm font-medium uppercase tracking-wider mb-3">
+          <p className="text-saas-accent text-base font-medium uppercase tracking-wider mb-3">
             Features
           </p>
           <h2 className="font-space-grotesk text-3xl sm:text-4xl font-bold text-white">
@@ -71,7 +71,7 @@ export default function SaasFeatures() {
               <h3 className="font-space-grotesk text-lg font-semibold text-white mb-2">
                 {feature.title}
               </h3>
-              <p className="text-sm text-zinc-400 leading-relaxed">
+              <p className="text-base text-zinc-400 leading-relaxed">
                 {feature.description}
               </p>
             </div>

@@ -21,7 +21,7 @@ export default function SaasFooter() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
           {Object.entries(links).map(([category, items]) => (
             <div key={category}>
-              <h4 className="text-white text-sm font-semibold mb-4">
+              <h4 className="text-white text-base font-semibold mb-4">
                 {category}
               </h4>
               <ul className="space-y-2.5">
@@ -29,7 +29,7 @@ export default function SaasFooter() {
                   <li key={item}>
                     <a
                       href="#"
-                      className="text-sm text-zinc-500 hover:text-zinc-300 transition-colors"
+                      className="text-base text-zinc-500 hover:text-zinc-300 transition-colors"
                     >
                       {item}
                     </a>
@@ -41,7 +41,7 @@ export default function SaasFooter() {
         </div>
 
         <div className="flex flex-col sm:flex-row items-center justify-between pt-8 border-t border-saas-border gap-4">
-          <p className="text-sm text-zinc-600">
+          <p className="text-base text-zinc-600">
             &copy; {new Date().getFullYear()} FlowBoard. All rights reserved.
           </p>
           <div className="flex items-center gap-1">
