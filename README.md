@@ -61,7 +61,7 @@ Open [http://localhost:3000](http://localhost:3000) to view the gallery.
 
 ## Demo
 
-[Live Demo](https://landing-page-templates-demo.vercel.app)
+[Live Demo](https://landing-page-templates-three.vercel.app)
 
 ## Built by
 
