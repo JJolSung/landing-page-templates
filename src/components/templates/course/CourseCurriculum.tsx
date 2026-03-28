@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "motion/react";
 import { ChevronDown, PlayCircle, Clock, BookOpen } from "lucide-react";
 import ScrollReveal from "@/components/shared/ScrollReveal";
 
