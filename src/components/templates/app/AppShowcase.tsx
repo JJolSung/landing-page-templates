@@ -213,7 +213,7 @@ function GoalsScreen() {
   );
 }
 
-const screens: Record<string, () => JSX.Element> = {
+const screens: Record<string, () => React.JSX.Element> = {
   dashboard: DashboardScreen,
   analytics: AnalyticsScreen,
   goals: GoalsScreen,

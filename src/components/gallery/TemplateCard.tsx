@@ -271,7 +271,7 @@ function AppPreview() {
   );
 }
 
-const previews: Record<string, () => JSX.Element> = {
+const previews: Record<string, () => React.JSX.Element> = {
   saas: SaasPreview,
   restaurant: RestaurantPreview,
   fitness: FitnessPreview,
