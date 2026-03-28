@@ -20,7 +20,7 @@ export default function EcommercePage() {
   if (!template) return null;
 
   return (
-    <main className="min-h-screen bg-ecommerce-bg text-ecommerce-dark font-libre-franklin">
+    <main className="min-h-screen overflow-x-hidden bg-ecommerce-bg text-ecommerce-dark font-libre-franklin">
       <BackToGallery
         templateName="E-commerce Product"
         onToggleInfo={() => setIsInfoOpen(!isInfoOpen)}

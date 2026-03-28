@@ -20,7 +20,7 @@ export default function MedicalPage() {
   if (!template) return null;
 
   return (
-    <main className="min-h-screen bg-medical-bg text-medical-text font-source-sans">
+    <main className="min-h-screen overflow-x-hidden bg-medical-bg text-medical-text font-source-sans">
       <BackToGallery
         templateName="Medical Clinic"
         onToggleInfo={() => setIsInfoOpen(!isInfoOpen)}
