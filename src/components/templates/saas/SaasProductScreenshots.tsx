@@ -239,14 +239,24 @@ function AnalyticsMockup() {
     <div className="p-4 space-y-3">
       <div className="grid grid-cols-2 gap-3">
         <div className="bg-saas-bg rounded-lg p-3">
-          <p className="text-sm text-zinc-500 mb-2">Sessions by Source</p>
-          <div className="flex items-end gap-1 h-20">
-            {[20, 35, 25, 50, 40, 60, 45, 70].map((h, i) => (
-              <div key={i} className="flex-1">
-                <div
-                  className="bg-saas-accent/30 rounded-t w-full"
-                  style={{ height: `${h}%` }}
-                />
+          <p className="text-sm text-zinc-500 mb-3">Sessions by Source</p>
+          <div className="space-y-2.5">
+            {[
+              { name: "Direct", value: 35, color: "bg-saas-accent" },
+              { name: "Organic", value: 28, color: "bg-emerald-500" },
+              { name: "Referral", value: 18, color: "bg-amber-500" },
+              { name: "Social", value: 12, color: "bg-rose-400" },
+              { name: "Email", value: 7, color: "bg-sky-400" },
+            ].map((source) => (
+              <div key={source.name} className="flex items-center gap-2">
+                <span className="text-sm text-zinc-400 w-14 shrink-0">{source.name}</span>
+                <div className="flex-1 h-2 bg-saas-border rounded-full overflow-hidden">
+                  <div
+                    className={`h-full ${source.color} rounded-full`}
+                    style={{ width: `${source.value * 2.5}%` }}
+                  />
+                </div>
+                <span className="text-sm text-zinc-500 w-8 text-right">{source.value}%</span>
               </div>
             ))}
           </div>
